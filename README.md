@@ -1,26 +1,10 @@
-the zip is the code for Wine quality qnalysis via improved qpriori algorithm and k-means++ clustering
-
-if you want to apply the code to your research. read readour.txt in the zip file for more imformations.
-due the limited time , i have too many exam , i don't have the time to write a detailed readme.md , I will come back during the Winter vacation!!!!!
-
-/////////////////////////////////////////////////////////////////////////////////////////
-Wine quality qnalysis via improved qpriori algorithm and k-means++ clustering
-Weijian Xie¹
-¹Jiangnan University, School of Artificial Intelligence and Computer Science, Wuxi 214122, China;
-Abstract
-Abstract: Objective The evaluation of wine quality is a complex problem involving multiple chemical components and sensory characteristics. 
-Traditional association rule mining methods struggle with efficiency when processing continuous variables, while clustering methods are effective for feature discretization but lack capabilities for uncovering deeper associations. 
-To address these limitations, we propose a comprehensive data mining framework that integrates the improved Apriori algorithm, K-means++ clustering, 
-and feature subset selection to uncover the underlying associations between wine quality and its attributes. 
-Method The study begins with extensive data preprocessing, including cleaning and standardization. Outliers are removed using the Interquartile Range (IQR) and Z-score methods to enhance data quality. 
-Next, continuous variables are discretized using the K-means++ clustering algorithm, with the optimal number of clusters determined by the silhouette coefficient method, achieving both dimensionality reduction and feature discretization. 
-The discretized data are then analyzed using an improved Apriori algorithm, which dynamically adjusts the support threshold and incorporates feature subset selection to optimize efficiency and improve rule interpretability. 
-Result Experimental results demonstrate that the proposed method effectively identifies significant relationships between wine quality and its attributes. For instance, lower density samples are more likely to have higher quality ratings, 
-and moderate alcohol levels are strongly correlated with superior wine quality. 
-The improved Apriori algorithm, enhanced with dynamic support thresholding and feature subset selection, reduces redundant computations while improving rule quality. 
-The discovered associations provide actionable insights into key factors influencing wine quality, such as alcohol content and density. 
-Conclusion This study presents a novel data mining approach that combines K-means++ clustering, feature subset selection, and an improved Apriori algorithm to address challenges in mining associations within continuous variable datasets. 
-The framework demonstrates significant improvements in efficiency and accuracy, not only in wine quality analysis but also as a reference for mining continuous data in other domains.
-Key words:
-data mining; K-means++ clustering; Apriori algorithm; association rule mining; wine quality analysis; dynamic support threshold; feature discretization; feature subset selection
-
+🌟 项目介绍
+本项目构建了一套面向连续型数据的关联规则挖掘完整解决方案，创新性将仅适用于离散数据的经典 Apriori 算法拓展至连续变量场景，实现 “聚类离散化 + 改进关联规则挖掘” 的全流程智能分析。
+🎯 核心亮点
+text
+K-means++ 自适应离散化 | 改进 Apriori 算法 | 动态支持度 | 特征子集优化
+🧩 功能特性
+✅ 连续变量自适应离散化采用 K-means++ 聚类算法 对连续型特征自动分箱，替代传统等宽 / 等频离散化方式，显著提升数据表达能力与挖掘效果。
+✅ 最优聚类数自动确定基于轮廓系数（Silhouette Coefficient） 自适应选取最佳聚类数量，完成无监督特征优化与降维。
+✅ 改进型 Apriori 算法支持动态最小支持度调整与特征子集筛选机制，大幅减少冗余计算，提升规则生成效率与可解释性。
+✅ 端到端挖掘流程以葡萄酒品质数据集为验证场景，实现数据预处理 → 聚类离散化 → 关联规则挖掘的完整 pipeline。
